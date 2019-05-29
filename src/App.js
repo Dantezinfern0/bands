@@ -1,9 +1,22 @@
 import React, { Component } from 'react'
-import HelloWorld from './components/HelloWorld'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import HomePage from './pages/HomePage'
+import LedZeppelin from './pages/LedZeppelin'
+import PinkFloyd from './pages/PinkFloyd'
+import SRV from './pages/SRV'
 
 class App extends Component {
   render() {
-    return <HelloWorld />
+    return (
+      <Router>
+        <Switch>
+          <Route path="/" exact component={HomePage} />
+          <Route path="/ledzeppelin" exact component={LedZeppelin} />
+          <Route path="/pinkfloyd" exact component={PinkFloyd} />
+          <Route path="/srv" exact component={SRV} />
+        </Switch>
+      </Router>
+    )
   }
 }
 
