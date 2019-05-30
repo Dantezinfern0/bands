@@ -4,21 +4,6 @@ import SrayV from '../pics/SRV.jpg'
 import LedZ from '../pics/Led-Zeppelin-Logo.jpg'
 import PinkF from '../pics/pink-floyd.png'
 
-// const fBands = [{
-//   name: "Led Zeppelin",
-//   genre: "Rock and Roll",
-//   image: "../pics/Led-Zeppelin-Logo-1200x565.jpg"
-// },
-// { name: "Pink Floyd",
-//   genre: "Classic Rock",
-//   image: "../pics/pink-floyd.png"},
-//   {
-//     name: "Stevie Ray Vaughn",
-//     genre: "Blues",
-//     image: "../pics/SRV.jpg"
-//   }
-// ]
-
 class HomePage extends Component {
   render() {
     return (
@@ -27,11 +12,33 @@ class HomePage extends Component {
 
         <section className="flex-me">
           <img className="center" src={LedZ} />
-          <Link className="bottom-space" to="/ledzeppelin">Led Zeppelin</Link>
+          <p>
+            Led Zeppelin is a rock and roll band that used classic blues licks
+            and distorted guitar sound with a rock beat to create a new type of
+            music that had never been heard.
+          </p>
+          <Link className="bottom-space" to="/ledzeppelin">
+            Led Zeppelin
+          </Link>
           <img className="center" src={SrayV} />
-          <Link className="bottom-space" to="/srv">Stevie Ray Vaughn</Link>
+          <p>
+            Stevie Ray Vaughn was one of the best blues guitar players of all
+            time. He tragically died in a helicopter accident in the early
+            1980's but his music will live on and inspire people for years to
+            come.
+          </p>
+          <Link className="bottom-space" to="/srv">
+            Stevie Ray Vaughn
+          </Link>
           <img className="center" src={PinkF} />
-          <Link className="bottom-space" to="/pinkfloyd">Pink Floyd</Link>
+          <p>
+            Pink Floyd's music could be classified as rock but it wanders. The
+            best part about listening to them is the guitar solos sound like
+            someone is 'singing the guitar' and their transitions are seemless.
+          </p>
+          <Link className="bottom-space" to="/pinkfloyd">
+            Pink Floyd
+          </Link>
         </section>
       </>
     )

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import HomeButton from '../components/HomeButton'
 
 class LedZeppelin extends Component {
   render() {
@@ -14,6 +15,8 @@ class LedZeppelin extends Component {
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         />
+        <p>This is one of the songs that I heard as a child that inspired me to play guitar for the rest of my life.</p>
+        <HomeButton/>
       </>
     )
   }

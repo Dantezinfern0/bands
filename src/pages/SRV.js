@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import HomeButton from '../components/HomeButton'
 
 class SRV extends Component {
   render() {
@@ -14,6 +15,12 @@ class SRV extends Component {
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         />
+        <p>
+          This is one of Stevie's songs that has been iconic to his style of
+          playing and his original tone. Copied by many other guitarists trying
+          to make their name in the world, this music will never grow old.
+        </p>
+        <HomeButton />
       </>
     )
   }
